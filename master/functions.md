@@ -4,14 +4,9 @@
 
 _After this lesson students will be able to:_
 
-1. Explain why we use Functions
-1. What are the benefits of Functions
-1. How to Define a Function
+1. Why do we use Functions, and what are the benefits of them
+1. How to Declare a Function
 1. How to Invoke a Function
-1. Write a function with a parameter
-1. Explain parameters and arguments and how they are used in functions
-1. Write a function with multiple parameters
-
 
 
 ## Setup
@@ -26,18 +21,23 @@ $ node functions.js
 ```
 
 
+## Why do we use Functions?
 
-## Why do we use functions?
+Using functions is another application of "DRY" coding
 
-Using functions is another application of DRY. Don't Repeat Yourself. With a function, you can store blocks of code that can be used as many times as you wish.
+Don't Repeat Yourself
+
+In a function, you can store blocks of code that can be run in a program as many times as you wish.
 
 
-## Defining a function
+## Declaring a Function
 
 When writing a function you should always use **const**, if you ever have to rename a function then it probably shoudn't be a function.
 
+To declare a Function start with "const". Then you would use a variable name. This name should describe what this function does. Functions do things, so a verb and a describing word are often used as name.
+
 ```javascript
-const helloWorld = () => {
+const printHelloWorld = () => {
 	console.log('Hello World')
 }
 ```
@@ -47,13 +47,11 @@ We have now declared helloWorld as a function. This will not have any effect unt
 
 ## Invoke a function
 
-Use  this one line of code to run multiple lines of code within a function.
+To Invoke a function simply use the name of the function and use parentheses to invoke the function.
 
 ```javascript
-helloWorld()
+printHelloWorld()
 ```
-
-Simply use the name of the variable and use **parentheses** to invoke the function.
 
 If the parentheses are not included, the function will not run.
 
@@ -61,7 +59,8 @@ When you create a function make sure to create it before you invoke it!!
 
 For example:
 
-This will not run!
+
+**This will not run!**
 
 ```javascript
 helloWorld()
@@ -71,7 +70,7 @@ const helloWorld = () => {
 }
 ```
 
-This will:
+**This is correct**
 
 ```javascript
 const helloWorld = () => {
@@ -85,7 +84,6 @@ helloWorld()
 ### Exercise
 
 * Write a function `myFirstFunction` that will console.log `This is my first function`
-
 
 
 ## Functions with Parameters
@@ -154,7 +152,7 @@ const addNumbers = (num1, num2) => {
 
 addNumbers(2,5)
 ```
-**Notice that you do not need to add parentheses to numbers**
+**Notice that you do not need to add quotes to numbers**
 This is also true with variables and booleans.
 
 Let's run this code and see what we come up with.
@@ -175,7 +173,7 @@ console.log(addNumbers(2,5))
 
 Lets try to write a couple of Functions
 
-1. Create a function that console logs square numbers.
+1. Create a function that console logs a numbers square
 
 1. Create a function that when invoked will console log "My name is <your name here> , and I have lived in <number> of states growing up"
 
