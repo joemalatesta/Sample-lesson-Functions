@@ -87,7 +87,7 @@ addNumbers(2,5)
 
 // where is the answer?
 
-// to get the number there are several things we can do.
+// to see the answer this is what we can do.
 
 console.log(addNumbers(2,5))
 

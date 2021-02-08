@@ -5,12 +5,12 @@
 _After this lesson students will be able to:_
 
 1. Explain why we use Functions
-1. What are the benifits of Functions
+1. What are the benefits of Functions
 1. How to Define a Function
 1. How to Invoke a Function
 1. Write a function with a parameter
-1. Explain parameters and arguments
-1. Write a function with multiple parameters.
+1. Explain parameters and arguments and how they are used in functions
+1. Write a function with multiple parameters
 
 
 
@@ -20,13 +20,17 @@ In `student_examples` for today, make a file `functions.js`
 
 Test that a console.log will appear in Terminal when you run the file.
 
+
 ```
 $ node functions.js
 ```
 
+
+
 ## Why do we use functions?
 
 Using functions is another application of DRY. Don't Repeat Yourself. With a function, you can store blocks of code that can be used as many times as you wish.
+
 
 ## Defining a function
 
@@ -43,7 +47,7 @@ We have now declared helloWorld as a function. This will not have any effect unt
 
 ## Invoke a function
 
-Use one line of code to run multiple lines of code
+Use  this one line of code to run multiple lines of code within a function.
 
 ```javascript
 helloWorld()
@@ -77,9 +81,11 @@ helloWorld()
 
 ```
 
+
 ### Exercise
 
 * Write a function `myFirstFunction` that will console.log `This is my first function`
+
 
 
 ## Functions with Parameters
@@ -102,12 +108,16 @@ const sayHi = (name) => {
 
 **Remember** When using the ${name} you must use backticks.
 
+
+
 ## Adding an Argument
+
 
 How do we put a name into the sayHi function?
 It's as easy as putting into the parentheses when you invoke the function.
 The variable inside the parentheses is called a parameter. When you invoke the function and add a name into it, that name is called the Argument.
  Let's go ahead and try to add Beth as an Argument.
+
 
 ```javascript
 
@@ -128,6 +138,8 @@ Why didn't this work?
 
 sayHi("Beth")
 ```
+
+
 
 ## Multiple Parameters
 
@@ -156,6 +168,8 @@ So if we want to see the answer in the console we would call the function inside
 
 console.log(addNumbers(2,5))
 ```
+
+
 
 ## Exercise
 
