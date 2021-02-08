@@ -10,6 +10,7 @@ _After this lesson students will be able to:_
 1. How to Invoke a Function
 1. Write a function with a parameter
 1. Explain parameters and arguments
+1. Write a function with multiple parameters.
 
 
 
@@ -99,13 +100,14 @@ const sayHi = (name) => {
 }
 ```
 
+**Remember** When using the ${name} you must use backticks.
 
 ## Adding an Argument
 
 How do we put a name into the sayHi function?
 It's as easy as putting into the parentheses when you invoke the function.
-
-Let's try.
+The variable inside the parentheses is called a parameter. When you invoke the function and add a name into it, that name is called the Argument.
+ Let's go ahead and try to add Beth as an Argument.
 
 ```javascript
 
@@ -120,9 +122,47 @@ sayHi(Beth)
 
 Why didn't this work?
 
-**remember** When using strings they must be in quotes ('', "", or ``)
+**remember** When using strings they must be in quotes.
 
 ```javascript
 
 sayHi("Beth")
 ```
+
+## Multiple Parameters
+
+You can put multiple parameters into a function.
+Let's go ahead and start one.
+
+```javascript
+const addNumbers = (num1, num2) => {
+    sum = num1 + num2
+    return sum
+}
+
+addNumbers(2,5)
+```
+**Notice that you do not need to add parentheses to numbers**
+This is also true with variables and booleans.
+
+Let's run this code and see what we come up with.
+
+Where is the answer?
+
+A return will send the answer back to where the function was called.
+So if we want to see the answer in the console we would call the function inside a console.log like this...
+
+```javascript
+
+console.log(addNumbers(2,5))
+```
+
+## Exercise
+
+Lets try to write a couple of Functions
+
+1. Create a function that console logs square numbers.
+
+1. Create a function that when invoked will console log "My name is <your name here> , and I have lived in <number> of states growing up"
+
+1. Create a function that adds 2 numbers then divides them by 2.
