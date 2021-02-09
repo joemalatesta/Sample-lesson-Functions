@@ -33,6 +33,12 @@ In a function, you can store blocks of code that can be run in a program as many
 
 ## Declaring a Function
 
+This is the basic template of a function
+
+const **(always use const when starting a function)** <function name> = (**for a parameter**) => (**this is the arrow function**) {
+	**block of code that is run when the function is invoked**
+}
+
 When writing a function you should always use **const**, if you ever have to rename a function then it probably shoudn't be a function.
 
 To declare a Function start with "const". Then you would use a variable name. This name should describe what this function does. Functions do things, so a verb and a describing word are often used as name.
