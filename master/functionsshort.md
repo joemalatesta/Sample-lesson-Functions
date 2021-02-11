@@ -20,7 +20,9 @@ Test that a console.log will appear in Terminal when you run the file.
 $ node functions.js
 ```
 
+## What is a Function?
 
+A Function is a block of code that does something using a key word to start it.
 
 ## Why do we use Functions?
 
@@ -39,7 +41,7 @@ const **(always use const when starting a function)** <function name> = (**for a
 	**block of code that is run when the function is invoked**
 }
 
-When writing a function you should always use **const**, if you ever have to rename a function then it probably shoudn't be a function.
+When writing a function you should always use **const**, if you ever have to rename a function then it probably shouldn't be a function.
 
 To declare a Function start with "const". Then you would use a variable name. This name should describe what this function does. Functions do things, so a verb and a describing word are often used as name.
 
