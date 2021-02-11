@@ -38,6 +38,7 @@ In a function, you can store blocks of code that can be run in a program as many
 This is the basic template of a function
 
 const **(always use const when starting a function)** <function name> = (**for a parameter**) => (**this is the arrow function**) {
+	
 	**block of code that is run when the function is invoked**
 }
 
